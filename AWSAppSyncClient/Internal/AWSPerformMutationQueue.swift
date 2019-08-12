@@ -34,7 +34,6 @@ final class AWSPerformMutationQueue {
 
         operationQueue = OperationQueue()
         operationQueue.name = "com.amazonaws.service.appsync.AWSPerformMutationQueue.operations"
-        operationQueue.maxConcurrentOperationCount = 1
 
         if let cacheFileURL = cacheFileURL {
             do {
